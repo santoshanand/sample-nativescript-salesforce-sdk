@@ -18,6 +18,8 @@ let config:IWebAuth = {
   calbackUrl:'ns://nativescript/sdk', 
   loginUrl:'https://login.salesforce.com' 
 };
+let page;
+let auth:Auth;
 // Event handler for Page "navigatingTo" event attached in main-page.xml
 export function navigatingTo(args: EventData) {
     /*
@@ -40,11 +42,15 @@ export function navigatingTo(args: EventData) {
     model = new HelloWorldModel();
     page.bindingContext = model;
 }
-
+export function onTap(args:EventData) {
+  if(page !== undefined && auth !== undefined) {
+    auth.logout(page);
+  }
+}
 export function navigatedTo(args:EventData) {
-  let page = <Page>args.object;
+  page = <Page>args.object;
   
-  let auth:Auth = new Auth(page);
+  auth = new Auth(page);
   auth.on('success', (data)=> {
     console.log('Success');
     Apex.query('select id, Name from Contact')

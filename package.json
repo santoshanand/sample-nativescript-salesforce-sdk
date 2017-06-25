@@ -4,7 +4,10 @@
   "readme": "NativeScript Application",
   "repository": "<fill-your-repository-here>",
   "nativescript": {
-    "id": "org.nativescript.samplesalesforce"
+    "id": "org.nativescript.samplesalesforce",
+    "tns-ios": {
+      "version": "3.0.1"
+    }
   },
   "dependencies": {
     "nativescript-salesforce-sdk": "^1.0.1",
