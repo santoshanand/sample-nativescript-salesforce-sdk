@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/default.css"/>
+
 # Native Script Salesforce SDK Sample Application
 
 Sample application using Native Script Salesforce SDK
