@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/default.css">
-<link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/androidstudio.css">
+<link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/default.css"/>
+<link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/androidstudio.css"/>
 
 <script src="https://highlightjs.org/static/highlight.site.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
